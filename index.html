@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>After Hours</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Fonts -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo" onclick="scrollToSection('home')">After Hours</div>
+    <nav class="nav-links">
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#direction" class="nav-link">Direction</a>
+      <a href="#lineup" class="nav-link">Line Up</a>
+      <a href="#media" class="nav-link">Media</a>
+      <a href="#faqs" class="nav-link">FAQs</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section home-section">
+    <div class="date-time">
+      <div class="date">12.06.2025</div>
+      <div class="time">5:00 - 6:00 PM</div>
+    </div>
+
+    <div class="hero-wrapper">
+      <!-- Animated Logo -->
+      <img src="image/logo.png" alt="Event Logo" class="animated-logo" />
+
+      <!-- CTA Buttons -->
+      <div class="cta-buttons">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgbli2jXzFoeMUK01QTFmBdvanPN6l768EVR-6-lklHbARHA/viewform" target="_blank" class="btn">RSVP</a>
+        <a href="#direction" class="btn">Get Directions</a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- About Us Section -->
+  <section id="about" class="section about-section">
+    <div class="about-container">
+      <h2 class="about-title">About Us</h2>
+      <div class="about-content">
+        <p class="about-text">
+          We are a passionate team of digital media students bringing creativity, energy, and collaboration to life
+          through music and technology. Our event is a celebration of student talent — from electrifying DJ sets to
+          immersive digital visuals — all crafted to mark the end of the semester in style.
+          <br /><br />
+          This one-night-only festival blends electronic music, interactive media, and student culture into an
+          unforgettable experience. Powered by creativity and community, we aim to provide a vibrant platform for
+          emerging DJs, visual artists, and media creatives to shine.
+          <br /><br />
+          Whether you're here to dance, connect, or simply enjoy the vibe — you're part of something special.
+        </p>
+        <div class="image-wrapper">
+          <img src="image/2.png" alt="About Illustration" class="about-image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Direction Section -->
+  <section id="direction" class="section direction-section">
+    <div class="direction-container">
+      <h2 class="direction-title">Direction</h2>
+      <p class="direction-text">
+        📍 Black Box - Room 103, Level 2, Building 12, RMIT University, Swanston Street, Melbourne VIC 3000<br />
+        Just a few steps from Melbourne Central Station.
+      </p>
+
+      <div class="direction-content">
+        <!-- Left: Video Placeholder -->
+        <div class="video-box">
+          <div class="video-placeholder">
+            <p class="video-desc">Getting to the place</p>
+            <video class="video-frame" controls>
+              <source src="path/to/your/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
+          </div>
+        </div>
+
+        <!-- Right: Google Map -->
+        <div class="map-box">
+          <div class="map-frame">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.241379961683!2d144.9608364756298!3d-37.807814771977064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642cc83a08be7%3A0xbb74540551507092!2sBuilding%2012%20(Gillespie%20Building)%20-%20RMIT%20University!5e0!3m2!1sen!2sau!4v1747245171823!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Line Up Section -->
+  <section id="lineup" class="section lineup-section">
+    <h2 class="lineup-title">Line Up</h2>
+    <div class="lineup-container">
+      <div class="artist-placeholder">
+        <div class="artist-circle">?</div>
+      </div>
+      <div class="artist-placeholder">
+        <div class="artist-circle">?</div>
+      </div>
+    </div>
+    <p class="lineup-coming-soon">Coming soon</p>
+  </section>
+
+
+  <!-- Media Section -->
+  <section id="media" class="section media-section">
+    <div class="media-header">
+      <h2>Media Highlights</h2>
+      <p>Relive the best moments through photos and videos from the event</p>
+    </div>
+
+    <!-- Highlight Feature (Optional Recap Video) -->
+    <div class="recap-highlight">
+      <div class="recap-video-placeholder">🎞️</div>
+      <div class="recap-info">
+        <h3>Event Recap Video</h3>
+        <p>A night of music, lights, and energy</p>
+      </div>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="media-tabs">
+      <button class="tab-button active" data-tab="photos">📸 Photos</button>
+      <button class="tab-button" data-tab="videos">🎥 Videos</button>
+      <button class="tab-button" data-tab="visuals">🎨 Behind the Scenes</button>
+    </div>
+
+    <!-- Media Grid Container -->
+    <div class="media-grid" id="photos" style="display: block;">
+      <!-- Future Photo Thumbnails -->
+      <div class="media-item placeholder">?</div>
+      <div class="media-item placeholder">?</div>
+    </div>
+
+    <div class="media-grid" id="videos" style="display: none;">
+      <!-- Future Video Thumbnails -->
+      <div class="media-item placeholder">?</div>
+      <div class="media-item placeholder">?</div>
+    </div>
+
+    <div class="media-grid" id="visuals" style="display: none;">
+      <!-- Future Visual Thumbnails -->
+      <div class="media-item placeholder">?</div>
+      <div class="media-item placeholder">?</div>
+    </div>
+
+    <!-- Social Media Link -->
+    <div class="social-link">
+      <a href="https://www.instagram.com/afterhours_rmit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        target="_blank">See more on Instagram</a>
+    </div>
+  </section>
+
+
+  <!-- FAQs Section -->
+  <section id="faqs" class="section">
+    <h2 class="section-title">FAQs</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="collapsible">Do I need a ticket?</button>
+        <div class="content">
+          <p>Nah, it’s free entry. Just show up and vibe 🎉</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="collapsible">What should I bring?</button>
+        <div class="content">
+          <p>Just you, your good energy, and maybe your mates 💃🪩</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="collapsible">Is it free?</button>
+        <div class="content">
+          <p>100% yes. No cover, no cap 🚫💸</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="collapsible">Can I bring friends from outside uni?</button>
+        <div class="content">
+          <p>Yep! As long as they’re chill and ready to dance 😎</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="collapsible">What kind of music is it?</button>
+        <div class="content">
+          <p>DJs spinning electronic, hip hop and bangers all night 🎶✨</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="collapsible">What if it rains?</button>
+        <div class="content">
+          <p>It's indoors, we’re not risking your fits ☔👟</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="collapsible">Can I leave and come back?</button>
+        <div class="content">
+          <p>Sure, but don’t ghost us for too long 👀</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+  <h2 class="section-title">Contact the Crew</h2>
+  <p class="section-subtitle">Got questions, collab ideas, or just wanna say hey? Slide into our inbox below.</p>
+
+  <form class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send it 💌</button>
+  </form>
+
+  <div class="social-links">
+    <a href="https://www.instagram.com/afterhours_rmit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+       target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="mailto:youremail@example.com" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
